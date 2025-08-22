@@ -1,7 +1,7 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
-import { Terminal, Cpu, Zap, Shield, Brain, Rocket } from 'lucide-react'
+import { Terminal, Zap, Shield, Brain, Rocket, Award } from 'lucide-react'
 
 export default function About() {
   const [activeTab, setActiveTab] = useState('story')
@@ -33,12 +33,29 @@ export default function About() {
     { id: 'values', label: 'Core Values', icon: Shield }
   ]
 
-  const achievements = [
-    { icon: Cpu, title: 'System Architecture', desc: 'Designed scalable microservices handling 1M+ requests/day' },
-    { icon: Brain, title: 'AI Integration', desc: 'Implemented ML models improving user experience by 40%' },
-    { icon: Zap, title: 'Performance Optimization', desc: 'Reduced load times by 60% through advanced caching strategies' },
-    { icon: Shield, title: 'Security Expert', desc: 'Implemented zero-trust security architecture for enterprise clients' }
+    const achievements = [
+    { 
+      icon: Award, 
+      title: 'Academic Journey', 
+      desc: '2nd-year B.Tech CSE student at Bennett University building a strong foundation in computer science.' 
+    },
+    { 
+      icon: Brain, 
+      title: 'AI/ML Enthusiast', 
+      desc: 'Exploring Artificial Intelligence and Machine Learning concepts through projects and practice.' 
+    },
+    { 
+      icon: Zap, 
+      title: 'DSA Explorer', 
+      desc: 'Strengthening Data Structures & Algorithms by solving problems and preparing for coding challenges.' 
+    },
+    { 
+      icon: Shield, 
+      title: 'Tech Aspirant', 
+      desc: 'Passionate about continuous learning, building real-world projects, and exploring emerging technologies.' 
+    }
   ]
+
 
   return (
     <section id="about" className="py-20 bg-gray-800 relative overflow-hidden mt-20" ref={sectionRef}>

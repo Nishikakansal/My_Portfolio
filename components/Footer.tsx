@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="flex items-center justify-center text-gray-400">
               <span>Made with</span>
               <Heart className="w-5 h-5 mx-2 text-red-500 fill-current" />
-              <span>by Your Name © 2024</span>
+              <span>by Nishika</span>
             </div>
           </div>
         </div>

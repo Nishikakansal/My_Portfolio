@@ -29,7 +29,7 @@ const projects: Project[] = [
   },
   {
     id: 2,
-    title: 'Faktify – Fake News Detection Platform',
+    title: 'Faktify',
     description: 'A fake news detection platform that analyzes news content, compares it with trusted sources',
     longDescription:
       'Faktify is a full-stack web platform built with React, Node.js, and Flask to combat misinformation by detecting and verifying fake news in real time. The platform integrates AI/ML models along with the Google Fact Check API to generate credibility scores with reasoning, helping users quickly assess the trustworthiness of news articles.',
@@ -40,36 +40,27 @@ const projects: Project[] = [
   },
   {
     id: 3,
-    title: 'Weather Dashboard',
-    description: 'Beautiful weather application with location-based forecasts',
+    title: 'RootVenture',
+    description: 'A starup idea sharing platform',
     longDescription:
       'An elegant weather dashboard that provides detailed weather information including current conditions, hourly and weekly forecasts, weather maps, and location-based alerts. Features a clean, responsive design with beautiful animations.',
-    technologies: ['Vue.js', 'Chart.js', 'OpenWeather API', 'SCSS'],
+    technologies: ['next.js', 'react.js', 'Tailwind', 'Mongodb'],
     thumbnail: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/yourusername/weather-dashboard',
+    githubUrl: 'https://github.com/Nishikakansal/RootVenture',
     liveUrl: 'https://your-weather-demo.vercel.app',
   },
-  {
-    id: 4,
-    title: 'Social Media App',
-    description: 'Full-stack social media platform with real-time messaging',
-    longDescription:
-      'A complete social media platform featuring user profiles, posts, comments, likes, real-time messaging, stories, and notification system. Includes advanced features like content moderation and analytics.',
-    technologies: ['React Native', 'Node.js', 'GraphQL', 'MongoDB', 'AWS'],
-    thumbnail: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/yourusername/social-media',
-  },
-  {
+    {
     id: 5,
-    title: 'Analytics Dashboard',
-    description: 'Data visualization dashboard with interactive charts',
+    title: 'Google Clone',
+    description: 'A simple Google search page clone built with Tailwind CSS.',
     longDescription:
-      'A powerful analytics dashboard that transforms complex data into beautiful, interactive visualizations. Features real-time data updates, customizable charts, export functionality, and responsive design.',
-    technologies: ['React', 'D3.js', 'Python', 'FastAPI', 'PostgreSQL'],
-    thumbnail: 'https://images.pexels.com/photos/590020/pexels-photo-590020.jpg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/yourusername/analytics-dashboard',
-    liveUrl: 'https://your-analytics-demo.vercel.app',
+      'Developed a responsive Google homepage clone using Tailwind CSS. The project replicates the clean UI of Google’s search engine with attention to design details, responsiveness, and user-friendly layout. Hosted on Netlify for easy access.',
+    technologies: ['HTML', 'CSS', 'Tailwind CSS'],
+    thumbnail: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/GoogleClone_TailwindCSS',
+    liveUrl: 'https://googleclone-tailwindcss.netlify.app/',
   },
+
   {
     id: 6,
     title: 'Portfolio Website',
@@ -78,8 +69,8 @@ const projects: Project[] = [
       'A stunning portfolio website built with modern web technologies featuring smooth animations, responsive design, dark mode toggle, and optimized performance. Showcases projects with detailed descriptions and interactive elements.',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
     thumbnail: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/yourusername/portfolio',
-    liveUrl: 'https://your-portfolio.vercel.app',
+    githubUrl: 'https://github.com/Nishikakansal/My_Portfolio',
+    liveUrl: 'https://my-portfolio-nishika-kansal.vercel.app/',
   },
 ]
 
