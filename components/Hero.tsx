@@ -103,14 +103,21 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
             
-            <button className="group relative px-10 py-5 border-2 border-cyan-400 text-cyan-400 font-bold text-lg rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl">
-              <span className="flex items-center">
-                <Download className="mr-3 w-6 h-6" />
-                Download CV
-              </span>
-              <div className="absolute inset-0 bg-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left opacity-20" />
-            </button>
+            <a 
+            href="/Nishika_new.pdf" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="group relative px-10 py-5 border-2 border-cyan-400 text-cyan-400 font-bold text-lg rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+          >
+            <span className="flex items-center">
+              <Download className="mr-3 w-6 h-6" />
+              Download CV
+            </span>
+            <div className="absolute inset-0 bg-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left opacity-20" />
+          </a>
+
           </div>
+        
 
           {/* Stats display */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">

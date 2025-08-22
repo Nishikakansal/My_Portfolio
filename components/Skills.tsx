@@ -242,12 +242,14 @@ export default function Skills() {
             <div className="space-y-3 text-green-400">
               {[
                 { delay: 0, text: 'Initializing career progression...', status: 'OK' },
-                { delay: 500, text: 'Loading Junior Developer module [2021]...', status: 'LOADED', details: 'FirstJob Inc - Learning fundamentals' },
-                { delay: 1000, text: 'Upgrading to Frontend Developer [2022]...', status: 'SUCCESS', details: 'WebAgency - Mastering UI/UX' },
-                { delay: 1500, text: 'Installing Full Stack capabilities [2023]...', status: 'COMPLETE', details: 'StartupXYZ - Backend integration' },
-                { delay: 2000, text: 'Promoting to Senior Full Stack Developer [2024]...', status: 'ACTIVE', details: 'Tech Corp - Leading projects' },
-                { delay: 2500, text: 'System optimization complete.', status: 'READY' }
-              ].map((item, index) => (
+                { delay: 500, text: 'Installing Core Programming Languages [2023]...', status: 'LOADED', details: 'C++, Python , Java , problem solving' },
+                { delay: 1000, text: 'Configuring Web Development Stack [2024]...', status: 'SUCCESS', details: 'HTML, CSS, JavaScript, React, Next.js' },
+                { delay: 1500, text: 'Integrating Backend & Databases [2024]...', status: 'COMPLETE', details: 'Node.js, MongoDB, SQL, Firebase' },
+                { delay: 2000, text: 'Exploring Data Structures & Algorithms [2024]...', status: 'ACTIVE', details: 'Striver’s DSA Sheet, LeetCode practice' },
+                { delay: 2500, text: 'Launching Projects & Open Source Contributions [2025]...', status: 'IN-PROGRESS', details: 'Portfolio, MediCard, RootVenture' },
+                { delay: 3000, text: 'Preparing for Internships & Placements [2026]...', status: 'READY' }
+              ]
+              .map((item, index) => (
                 <div 
                   key={index} 
                   className="animate-fadeInUp opacity-0"
