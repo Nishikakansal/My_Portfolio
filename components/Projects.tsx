@@ -18,59 +18,164 @@ interface Project {
 const projects: Project[] = [
   {
     id: 1,
-    title: 'Connectly',
-    description: 'Video conferencing Application with React, Node.js, and Stream integration',
+    title: 'Chikitsak',
+    description:
+      'CHIKITSAK is an AI-powered emergency hospital recommendation system that helps users find the most suitable hospital based on their medical condition.',
     longDescription:
-      'Connectly is a modern video conferencing app built with React, Next.js, and Tailwind CSS, secured by Clerk authentication. It enables users to create and join meetings with a clean, responsive, and reliable interface for smooth virtual collaboration.',
-    technologies: ['React', 'Next.js', 'Node.js', 'clerk auth', 'Stream', 'Tailwind CSS'],
-    thumbnail: 'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/Connectly',
-    liveUrl: 'https://your-ecommerce-demo.vercel.app',
+      'CHIKITSAK is a smart healthcare application designed to assist patients during medical emergencies. It uses AI to predict the severity of symptoms and recommends the most appropriate hospital instead of just the nearest one by considering real-time factors like ICU, beds, doctors, and travel time etc.',
+    technologies: ['Next.js', 'React', 'MongoDB', 'Node.js', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/7088524/pexels-photo-7088524.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Chikitsak',
+    liveUrl: 'https://your-chikitsak-demo.vercel.app',
   },
+
   {
     id: 2,
-    title: 'Faktify',
-    description: 'A fake news detection platform that analyzes news content, compares it with trusted sources',
+    title: 'JanConnect',
+    description:
+      'A civic issue reporting platform connecting citizens with municipal authorities.',
     longDescription:
-      'Faktify is a full-stack web platform built with React, Node.js, and Flask to combat misinformation by detecting and verifying fake news in real time. The platform integrates AI/ML models along with the Google Fact Check API to generate credibility scores with reasoning, helping users quickly assess the trustworthiness of news articles.',
-    technologies: ['React', 'TypeScript', 'Socket.io', 'PostgreSQL', 'Redux'],
-    thumbnail: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/yourusername/taskmanager',
-    liveUrl: 'https://your-taskmanager-demo.vercel.app',
+      'JanConnect enables citizens to report civic issues using real-time location tracking, image uploads, and live status updates. The application also provides a contractor dashboard for managing tenders and assigned issues, making the complaint resolution process transparent and efficient.',
+    technologies: ['React Native', 'Supabase', 'Cloudinary', 'Expo'],
+    thumbnail:
+      'https://images.pexels.com/photos/6074935/pexels-photo-6074935.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/JanConnect',
+    liveUrl: 'https://janconnect-demo.vercel.app',
   },
+
   {
     id: 3,
-    title: 'RootVenture',
-    description: 'A starup idea sharing platform',
+    title: 'Breathline',
+    description:
+      'A centralized healthcare platform for secure medical record management and emergency access.',
     longDescription:
-      'An elegant weather dashboard that provides detailed weather information including current conditions, hourly and weekly forecasts, weather maps, and location-based alerts. Features a clean, responsive design with beautiful animations.',
-    technologies: ['next.js', 'react.js', 'Tailwind', 'Mongodb'],
-    thumbnail: 'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/RootVenture',
-    liveUrl: 'https://your-weather-demo.vercel.app',
+      'Breathline enables patients to securely store medical records while allowing authorized doctors to instantly access critical information during emergencies. It features role-based authentication, cloud storage, and dashboards for patients and healthcare professionals.',
+    technologies: ['Next.js', 'MongoDB', 'Cloudinary', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/6129684/pexels-photo-6129684.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Breathline',
+    liveUrl: 'https://breathline-project-showcase.vercel.app/',
   },
-    {
-    id: 5,
-    title: 'Google Clone',
-    description: 'A simple Google search page clone built with Tailwind CSS.',
+
+  {
+    id: 4,
+    title: 'CNN-based Lung Disease Detector',
+    description:
+      'An AI-powered application that detects lung diseases from chest X-ray images.',
     longDescription:
-      'Developed a responsive Google homepage clone using Tailwind CSS. The project replicates the clean UI of Google’s search engine with attention to design details, responsiveness, and user-friendly layout. Hosted on Netlify for easy access.',
-    technologies: ['HTML', 'CSS', 'Tailwind CSS'],
-    thumbnail: 'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/GoogleClone_TailwindCSS',
-    liveUrl: 'https://googleclone-tailwindcss.netlify.app/',
+      'Built using DenseNet121, this deep learning application classifies chest X-rays into Normal, COVID-19, Tuberculosis, Viral Pneumonia, and Bacterial Pneumonia. The project applies image preprocessing, transfer learning, and optimized CNN architectures to assist in early disease diagnosis.',
+    technologies: ['Python', 'TensorFlow', 'Keras', 'DenseNet121', 'CNN'],
+    thumbnail:
+      'https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Lung-Disease-Detector',
+    liveUrl: 'https://your-lung-detector-demo.vercel.app',
+  },
+
+  {
+    id: 5,
+    title: 'RootVenture',
+    description:
+      'A startup collaboration platform for sharing innovative business ideas and finding team members.',
+    longDescription:
+      'RootVenture helps entrepreneurs showcase startup ideas, discover collaborators, and build teams. Users can publish ideas, browse innovations, connect with like-minded developers, and collaborate on projects through a clean and responsive interface.',
+    technologies: ['Next.js', 'React', 'MongoDB', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/RootVenture',
+    liveUrl: 'https://your-rootventure-demo.vercel.app',
   },
 
   {
     id: 6,
-    title: 'Portfolio Website',
-    description: 'Responsive portfolio website with modern animations',
+    title: 'Productactathon',
+    description:
+      'A hackathon project focused on solving real-world problems through innovative technology.',
     longDescription:
-      'A stunning portfolio website built with modern web technologies featuring smooth animations, responsive design, dark mode toggle, and optimized performance. Showcases projects with detailed descriptions and interactive elements.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    thumbnail: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/My_Portfolio',
-    liveUrl: 'https://my-portfolio-nishika-kansal.vercel.app/',
+      'Productactathon is a collaborative hackathon project built under strict time constraints. It demonstrates rapid product development, modern UI design, scalable architecture, and innovative problem-solving while integrating multiple technologies into a production-ready prototype.',
+    technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Productactathon',
+    liveUrl: 'https://your-productactathon-demo.vercel.app',
+  },
+
+  {
+    id: 7,
+    title: 'Connectly',
+    description:
+      'A modern video conferencing platform supporting secure virtual meetings.',
+    longDescription:
+      'Connectly is a responsive video conferencing application built using React, Next.js, Clerk Authentication, and Stream Video SDK. It enables users to securely create, join, and manage video meetings with a professional user experience.',
+    technologies: ['React', 'Next.js', 'Clerk', 'Stream SDK', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Connectly',
+    liveUrl: 'https://connectly-pi.vercel.app/',
+  },
+
+  {
+    id: 8,
+    title: 'Faktify',
+    description:
+      'An AI-powered fake news detection and verification platform.',
+    longDescription:
+      'Faktify combines AI/ML models, Google Fact Check API, and community-driven reporting to analyze news articles and generate credibility scores with detailed explanations. It also includes real-time comparisons, quizzes, and community engagement features.',
+    technologies: [
+      'React',
+      'Flask',
+      'Node.js',
+      'MongoDB',
+      'BERT',
+      'LLaMA',
+      'Tailwind CSS',
+    ],
+    thumbnail:
+      'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Faktify',
+    liveUrl: 'https://your-faktify-demo.vercel.app',
+  },
+
+  {
+    id: 9,
+    title: 'CYMBOT (Mental Health Chatbot)',
+    description:
+      'An AI chatbot that provides mental health support and wellness assistance.',
+    longDescription:
+      'CYMBOT is an intelligent mental health chatbot designed to provide emotional support through interactive conversations. It offers mood tracking, mental wellness guidance, and a user-friendly interface while promoting awareness and accessible healthcare.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Flask', 'MySQL'],
+    thumbnail:
+      'https://images.pexels.com/photos/4101143/pexels-photo-4101143.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/CYMBOT',
+    liveUrl: 'https://your-cymbot-demo.vercel.app',
+  },
+
+  {
+    id: 10,
+    title: 'Java Social Media Application',
+    description:
+      'A social networking application developed using Java Spring Boot and Firebase.',
+    longDescription:
+      'This social media application enables students to create profiles, share posts, interact with peers, and securely authenticate using Firebase. Built with Spring Boot, it demonstrates REST APIs, backend development, authentication, and database integration.',
+    technologies: ['Java', 'Spring Boot', 'Firebase', 'REST API'],
+    thumbnail:
+      'https://images.pexels.com/photos/267389/pexels-photo-267389.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/Java-Social-Media',
+    liveUrl: 'https://your-java-social-demo.vercel.app',
+  },
+
+  {
+    id: 11,
+    title: 'Google Clone',
+    description:
+      "A responsive clone of Google's homepage built using Tailwind CSS.",
+    longDescription:
+      'A pixel-perfect recreation of the Google Search homepage featuring responsive layouts, clean UI components, and Tailwind CSS best practices. This project demonstrates attention to detail, responsive web design, and frontend development skills.',
+    technologies: ['HTML', 'CSS', 'Tailwind CSS'],
+    thumbnail:
+      'https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=800',
+    githubUrl: 'https://github.com/Nishikakansal/GoogleClone_TailwindCSS',
+    liveUrl: 'https://googleclone-tailwindcss.netlify.app/',
   },
 ]
 
@@ -119,9 +224,8 @@ export default function Projects() {
               <div
                 key={project.id}
                 data-index={index}
-                className={`project-card group cursor-pointer transition-all duration-500 ${
-                  isVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
-                }`}
+                className={`project-card group cursor-pointer transition-all duration-500 ${isVisible ? 'animate-fadeInUp' : 'opacity-0 translate-y-8'
+                  }`}
                 style={{ animationDelay: `${index * 100}ms` }}
                 onClick={() => setSelectedProject(project)}
               >
