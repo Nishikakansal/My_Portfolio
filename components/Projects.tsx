@@ -96,7 +96,7 @@ const projects: Project[] = [
     technologies: ['React', 'Node.js', 'MongoDB', 'Express', 'Tailwind CSS'],
     thumbnail:
       'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/Productactathon',
+    githubUrl: 'https://github.com/Nishikakansal/IIT_ROORKEE_PRODUCTATHON',
     liveUrl: 'https://your-productactathon-demo.vercel.app',
   },
 

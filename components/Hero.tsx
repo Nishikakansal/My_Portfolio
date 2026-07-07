@@ -7,13 +7,20 @@ export default function Hero() {
   const [currentText, setCurrentText] = useState('')
   const [currentIndex, setCurrentIndex] = useState(0)
   const [isDeleting, setIsDeleting] = useState(false)
-  
-  const texts = ['Frontend-Developer', 'UI-UX designer', 'AI/ML Enthusiast', 'Tech Innovator']
+
+
+  const texts = [
+    'Full-Stack Developer',
+    'AI/ML Engineer',
+    'Software Engineer',
+    'Problem Solver',
+    'DSA Enthusiast'
+  ];
 
   useEffect(() => {
     const timeout = setTimeout(() => {
       const current = texts[currentIndex]
-      
+
       if (isDeleting) {
         setCurrentText(current.substring(0, currentText.length - 1))
       } else {
@@ -45,7 +52,7 @@ export default function Hero() {
         <div className="absolute bottom-40 left-20 w-12 h-12 bg-gradient-to-r from-cyan-400 to-purple-400 animate-pulse opacity-30" />
         <div className="absolute bottom-20 right-10 w-24 h-24 border border-yellow-400 rounded-full animate-ping opacity-20" />
       </div>
-      
+
       <div className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
         <div className="animate-fadeInUp">
           {/* Terminal-style header */}
@@ -77,7 +84,7 @@ export default function Hero() {
               Nishika Kansal
             </span>
           </h1>
-          
+
           <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-cyan-400 mb-6 h-12 flex items-center justify-center">
             <Terminal className="w-8 h-8 mr-4 animate-pulse" />
             <span className="animate-hologram">
@@ -85,13 +92,13 @@ export default function Hero() {
               <span className="animate-pulse text-white">|</span>
             </span>
           </div>
-          
+
           <p className="text-lg sm:text-xl text-gray-300 mb-8 max-w-4xl mx-auto leading-relaxed">
             Building Code that <span className="text-yellow-300 font-semibold">connects,</span> design that <span className="text-yellow-300 font-semibold">inspires.  </span>
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <button 
+            <button
               onClick={scrollToAbout}
               className="group relative px-10 py-5 bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-bold text-lg rounded-lg overflow-hidden transform hover:scale-105 transition-all duration-300 animate-circuitPulse shadow-2xl"
             >
@@ -102,22 +109,22 @@ export default function Hero() {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
             </button>
-            
-            <a 
-            href="/Nishika_new.pdf" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="group relative px-10 py-5 border-2 border-cyan-400 text-cyan-400 font-bold text-lg rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl"
-          >
-            <span className="flex items-center">
-              <Download className="mr-3 w-6 h-6" />
-              Download CV
-            </span>
-            <div className="absolute inset-0 bg-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left opacity-20" />
-          </a>
+
+            <a
+              href="/Resume_Nishika.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative px-10 py-5 border-2 border-cyan-400 text-cyan-400 font-bold text-lg rounded-lg hover:bg-cyan-400 hover:text-gray-900 transition-all duration-300 transform hover:scale-105 shadow-2xl"
+            >
+              <span className="flex items-center">
+                <Download className="mr-3 w-6 h-6" />
+                Download CV
+              </span>
+              <div className="absolute inset-0 bg-cyan-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left opacity-20" />
+            </a>
 
           </div>
-        
+
 
           {/* Stats display */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
@@ -129,7 +136,7 @@ export default function Hero() {
             ].map((stat, index) => {
               const Icon = stat.icon
               return (
-                <div 
+                <div
                   key={index}
                   className="cyber-glass rounded-lg p-3 text-center animate-scaleIn holographic"
                   style={{ animationDelay: `${index * 0.2}s` }}
