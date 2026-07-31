@@ -45,7 +45,7 @@ export default function Header() {
             <div className="hidden md:flex items-center space-x-8">
               {[
                 { name: 'about', label: 'System.about()' },
-                { name: 'skills', label: 'Skills.exe' },
+                { name: 'skills', label: 'Certs.json' },
                 { name: 'projects', label: 'Projects[]' },
                 { name: 'contact', label: 'Contact.init()' }
               ].map((item) => (
