@@ -224,9 +224,10 @@
   animation: scaleIn 0.6s ease-out forwards;
 }
 
-/* Smooth scrolling */
+/* Smooth scrolling + global 10% size reduction */
 html {
   scroll-behavior: smooth;
+  font-size: 90%;
 }
 
 /* Custom scrollbar */
@@ -407,6 +408,25 @@ html {
     transform: translateY(-100vh) rotate(360deg);
     opacity: 0;
   }
+}
+
+/* Marquee / ticker scroll animation for cert slider */
+@keyframes marqueeScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marqueeScroll 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 /* Responsive utilities */

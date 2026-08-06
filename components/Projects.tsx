@@ -20,70 +20,67 @@ const projects: Project[] = [
     id: 1,
     title: 'Chikitsak',
     description:
-      'CHIKITSAK is an AI-powered emergency hospital recommendation system that helps users find the most suitable hospital based on their medical condition.',
+      'AI-powered emergency healthcare platform that predicts symptom severity and recommends suitable hospitals based on medical urgency and real-time resource availability.',
     longDescription:
-      'CHIKITSAK is a smart healthcare application designed to assist patients during medical emergencies. It uses AI to predict the severity of symptoms and recommends the most appropriate hospital instead of just the nearest one by considering real-time factors like ICU, beds, doctors, and travel time etc.',
-    technologies: ['Next.js', 'React', 'MongoDB', 'Node.js', 'Tailwind CSS'],
+      'Chikitsak is an AI-powered emergency healthcare platform that predicts symptom severity and recommends the most suitable hospital based on medical urgency and real-time resource availability. It features dedicated patient and doctor portals, integrating ML models, real-time ICU/bed/doctor data, and travel time for smarter emergency decisions.',
+    technologies: ['React', 'TypeScript', 'Flask', 'Python', 'MongoDB', 'HuggingFace'],
     thumbnail:
       'https://images.pexels.com/photos/7088524/pexels-photo-7088524.jpeg?auto=compress&cs=tinysrgb&w=800',
     githubUrl: 'https://github.com/Nishikakansal/Chikitsak',
-    liveUrl: 'https://your-chikitsak-demo.vercel.app',
+    liveUrl: 'https://chikitsakpatient.vercel.app/',
   },
 
   {
     id: 2,
     title: 'JanConnect',
     description:
-      'A civic issue reporting platform connecting citizens with municipal authorities.',
+      'React Native app for citizens to report civic issues and contractors to bid, manage, and resolve them with real-time tracking.',
     longDescription:
-      'JanConnect enables citizens to report civic issues using real-time location tracking, image uploads, and live status updates. The application also provides a contractor dashboard for managing tenders and assigned issues, making the complaint resolution process transparent and efficient.',
+      'JanConnect is a React Native mobile application that enables citizens to report civic issues with real-time location tracking, image uploads, and live status updates. It also provides contractors with a dedicated dashboard to bid on, manage, and resolve reported issues — making civic complaint resolution transparent and efficient.',
     technologies: ['React Native', 'Supabase', 'Cloudinary', 'Expo'],
     thumbnail:
       'https://images.pexels.com/photos/6074935/pexels-photo-6074935.jpeg?auto=compress&cs=tinysrgb&w=800',
     githubUrl: 'https://github.com/Nishikakansal/JanConnect',
-    liveUrl: 'https://janconnect-demo.vercel.app',
   },
 
   {
     id: 3,
     title: 'Breathline',
     description:
-      'A centralized healthcare platform for secure medical record management and emergency access.',
+      'Full-stack medical records platform with role-based dashboards for patients, doctors, and emergencies.',
     longDescription:
-      'Breathline enables patients to securely store medical records while allowing authorized doctors to instantly access critical information during emergencies. It features role-based authentication, cloud storage, and dashboards for patients and healthcare professionals.',
-    technologies: ['Next.js', 'MongoDB', 'Cloudinary', 'Tailwind CSS'],
+      'Breathline is a full-stack medical records platform that enables patients to securely store health records while allowing authorized doctors to instantly access critical information during emergencies. It features role-based authentication, Cloudinary cloud storage, and dedicated dashboards for patients and healthcare professionals.',
+    technologies: ['Next.js', 'MongoDB', 'Cloudinary', 'JavaScript'],
     thumbnail:
       'https://images.pexels.com/photos/6129684/pexels-photo-6129684.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/Breathline',
-    liveUrl: 'https://breathline-project-showcase.vercel.app/',
+    githubUrl: 'https://github.com/Nishikakansal/Breathline-Project',
   },
 
   {
     id: 4,
     title: 'CNN-based Lung Disease Detector',
     description:
-      'An AI-powered application that detects lung diseases from chest X-ray images.',
+      'A CNN-based AI project that classifies different lung diseases from chest X-ray images using Deep Learning.',
     longDescription:
-      'Built using DenseNet121, this deep learning application classifies chest X-rays into Normal, COVID-19, Tuberculosis, Viral Pneumonia, and Bacterial Pneumonia. The project applies image preprocessing, transfer learning, and optimized CNN architectures to assist in early disease diagnosis.',
+      'Built using DenseNet121 and transfer learning, this deep learning application classifies chest X-rays into Normal, COVID-19, Tuberculosis, Viral Pneumonia, and Bacterial Pneumonia. The project applies image preprocessing, optimized CNN architectures, and TensorFlow/Keras to assist in early and accurate disease diagnosis.',
     technologies: ['Python', 'TensorFlow', 'Keras', 'DenseNet121', 'CNN'],
     thumbnail:
       'https://images.pexels.com/photos/7088526/pexels-photo-7088526.jpeg?auto=compress&cs=tinysrgb&w=800',
-    githubUrl: 'https://github.com/Nishikakansal/Lung-Disease-Detector',
-    liveUrl: 'https://your-lung-detector-demo.vercel.app',
+    githubUrl: 'https://github.com/Nishikakansal/Lungs-Disease-Classifier-AI',
   },
 
   {
     id: 5,
     title: 'RootVenture',
     description:
-      'A startup collaboration platform for sharing innovative business ideas and finding team members.',
+      'Community-driven platform where users can share startup ideas, receive upvotes, and connect with innovators.',
     longDescription:
-      'RootVenture helps entrepreneurs showcase startup ideas, discover collaborators, and build teams. Users can publish ideas, browse innovations, connect with like-minded developers, and collaborate on projects through a clean and responsive interface.',
-    technologies: ['Next.js', 'React', 'MongoDB', 'Tailwind CSS'],
+      'RootVenture is a community-driven platform where users can share startup ideas, receive upvotes and feedback, discover trending concepts, and connect with people interested in innovative ventures. It helps entrepreneurs showcase ideas, find collaborators, and build teams through a clean and responsive interface.',
+    technologies: ['Next.js', 'React', 'MongoDB', 'Tailwind CSS', 'JavaScript'],
     thumbnail:
       'https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=800',
     githubUrl: 'https://github.com/Nishikakansal/RootVenture',
-    liveUrl: 'https://your-rootventure-demo.vercel.app',
+    liveUrl: 'https://root-venture.vercel.app/',
   },
 
   {
