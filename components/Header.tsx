@@ -46,6 +46,7 @@ export default function Header() {
               {[
                 { name: 'about', label: 'System.about()' },
                 { name: 'skills', label: 'Certs.json' },
+                { name: 'achievements', label: 'Honors[]' },
                 { name: 'projects', label: 'Projects[]' },
                 { name: 'contact', label: 'Contact.init()' }
               ].map((item) => (
@@ -121,6 +122,7 @@ export default function Header() {
               {[
                 { name: 'about', label: 'about.js', icon: '📄' },
                 { name: 'skills', label: 'skills.json', icon: '⚙️' },
+                { name: 'achievements', label: 'achievements.log', icon: '🏆' },
                 { name: 'projects', label: 'projects/', icon: '📁' },
                 { name: 'contact', label: 'contact.md', icon: '📧' }
               ].map((item, index) => (

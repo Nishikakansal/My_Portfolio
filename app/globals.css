@@ -75,11 +75,16 @@
 @layer base {
   * {
     @apply border-border;
+    box-sizing: border-box;
   }
   body {
     @apply bg-gray-900 text-gray-100;
     background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 50%, #16213e 100%);
     min-height: 100vh;
+    /* GPU-accelerate the entire page to prevent scroll jank */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
   }
 }
 
@@ -228,6 +233,10 @@
 html {
   scroll-behavior: smooth;
   font-size: 90%;
+  /* Enable momentum-based smooth scroll on iOS */
+  -webkit-overflow-scrolling: touch;
+  /* Prevent scroll-anchoring layout shifts */
+  overflow-anchor: auto;
 }
 
 /* Custom scrollbar */
@@ -413,16 +422,18 @@ html {
 /* Marquee / ticker scroll animation for cert slider */
 @keyframes marqueeScroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(0) translateZ(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateZ(0);
   }
 }
 
 .animate-marquee {
-  animation: marqueeScroll 35s linear infinite;
+  /* 50s for 12 certs — gives a comfortable pace */
+  animation: marqueeScroll 50s linear infinite;
   will-change: transform;
+  backface-visibility: hidden;
 }
 
 .animate-marquee:hover {

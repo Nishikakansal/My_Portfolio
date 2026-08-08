@@ -136,10 +136,32 @@ const certifications: Certification[] = [
     color: 'from-fuchsia-400 to-rose-500',
     badge: 'Prompt Eng',
     description: 'Advanced prompt techniques, Few-Shot, Chain-of-Thought, and LLM optimization.'
+  },
+  {
+    id: 11,
+    title: 'IMS Certification',
+    issuer: 'IMS Institute',
+    date: 'Certified',
+    image: '/certifications/ims_certification.png',
+    link: '/certifications/IMS_Certification.pdf',
+    color: 'from-sky-400 to-blue-600',
+    badge: 'Management',
+    description: 'Certified in integrated management systems, quality assurance, and organizational excellence.'
+  },
+  {
+    id: 12,
+    title: 'NLP Skill Badge',
+    issuer: 'Google Cloud',
+    date: 'Skill Badge',
+    image: '/certifications/nlp_skill_badge.png',
+    link: '/certifications/AnalyzeSentimentwithNaturalLanguageAPISkillBadge.pdf',
+    color: 'from-green-400 to-teal-600',
+    badge: 'Google Cloud',
+    description: 'Analyzed sentiment with Google Cloud Natural Language API — entity, syntax, and sentiment analysis at scale.'
   }
 ]
 
-// Duplicate for seamless infinite loop
+// Seamless infinite marquee loop
 const allCerts = [...certifications, ...certifications]
 
 export default function Certifications() {
@@ -282,7 +304,8 @@ export default function Certifications() {
                       fill
                       sizes="260px"
                       className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
-                      priority={index < 5}
+                      loading="lazy"
+                      priority={false}
                     />
                     {/* Gradient overlay */}
                     <div className="absolute inset-0 bg-gradient-to-t from-gray-950 via-gray-950/10 to-transparent opacity-50 group-hover:opacity-30 transition-opacity duration-300" />
